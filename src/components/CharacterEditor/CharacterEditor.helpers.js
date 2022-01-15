@@ -44,13 +44,11 @@ export const skinColorOptions = skinColors.map(({ label, color }) => {
     children: null,
   };
 });
-export const clothesColorOptions = clothesColors.map(
-  ({ label, color }) => {
-    return {
-      id: color,
-      label,
-      color,
-      children: null,
-    };
-  }
-);
+export const clothesColorOptions = clothesColors.map(({ label, color }) => {
+  return {
+    id: color,
+    label,
+    color,
+    children: null,
+  };
+});
