@@ -46,3 +46,34 @@
   left: 0;
   height: 40%;
 }
+
+@media only screen and (max-width: 768px) {
+  .header {
+    display: none;
+  }
+
+  /* using absolute center trick */
+  .characterWrapper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+  .controlColumn {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    overflow: auto;
+    white-space: nowrap;
+    overflow-y: auto;
+    transform: translate(0%, 150%);
+  }
+  .perspectiveBox {
+    display: none;
+  }
+}
